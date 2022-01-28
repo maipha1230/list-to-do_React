@@ -3,22 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {
-  BrowserRouter ,
-  Routes,
-  Route,
-
-} from 'react-router-dom';
-import Login from './contents/login.js'
-
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route exact path='/' element={< App />}></Route>
-      <Route exact path='/login' element={< Login />}></Route>
-    </Routes>
-  </BrowserRouter>  ,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
